@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CV Aleksandra Semenova</title>
+    <link href="https://fonts.googleapis.com/css2?family=Karma:wght@400;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="content">
+        <div class="top-right"></div>
+        <div class="top-left"></div>
+        <div class="right"></div>
+        <div class="left"></div>
+        <div class="bottom"></div>
+
+        <header>
+            <section class="heading">
+                <div class="image-wrap">
+                    <img src="images/img1.jpg" alt="My photo">
+                </div>
+                <div class="text-wrap">
+                    <h1>Aleksandra Semenova</h1>
+                    <h3>Junior Frontend-developer</h3>
+                </div>
+            </section>
+            <section class="contacts">
+                <ul>
+                    <li class="small">
+                        <img class="icon" src="images/call.png" alt="phone">
+                        <a href="tel: +7 (922) 955 45 76">+7 (922) 955 45 76</a>
+                    </li>
+                    <li class="small">
+                        <img class="icon" src="images/envelope.png" alt="email">
+                        <a href="mailto: semenovalekshu@gmail.com">semenovalekshu@gmail.com</a>
+                    </li>
+                </ul>
+            </section>
+        </header>
+
+        <aside>
+            <div class="add-content">
+                <section class="hard-skills">
+                    <h4>Hard skills</h4>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript Basics</li>
+                        <li>Figma</li>
+                        <li>Git</li>
+                        <li><i>within courses worked a bit with:</i>
+                            <ul>
+                                <li>C</li>
+                                <li>Phyton</li>
+                                <li>Bootstrap</li>
+                                <li>JQuery</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="english">
+                    <h4>English</h4>
+                    <p>Level B1-B2.<br>
+                        English was necessary for communication when I was volunteering abroad.</p>
+                </section>
+            </div>
+        </aside>
+
+        <main>
+            <div class="main-content">
+                <section id="about">
+                    <h4>About me</h4>
+                    <p> As I decided to change my career, I'm just beginning my Web Development journey which I find
+                        very
+                        interesting
+                        and fasciating as well as challenging and full of ups and downs.<br>
+                        I'm eager to expand my professional knowledge and skills and looking forward to becoming a part
+                        of
+                        the
+                        IT world.
+                    </p>
+                </section>
+
+                <section class="code">
+                    <h4>Code examples (JS)</h4>
+                    <ol>
+                        <li><i>Categorize New Member</i></li>
+                        <code>
+
+                            function openOrSenior(data) {
+                                const result = [];
+                                let len = data.length;
+                                for (let i = 0, j = 0; i < len; i++) { 
+                                    if (data[i][0]>= 55 && data[i][1] > 7) {
+                                        result[j] = "Senior";
+                                        j++;
+                                    } else {
+                                        result[j] = "Open";
+                                        j++;
+                                    }
+                                }
+                                return result;
+                            }
+
+                            </code>
+                        <li><i>Find Shortest Word</i></li>
+                        <code>
+
+                            function findShort(s) {
+                                return Math.min.apply(null, s.split(" ").map(word => word.length));
+                            }
+
+                            </code>
+                    </ol>
+                </section>
+
+                <section class="work-experience">
+                    <h4>Work experience</h4>
+                    <p>None yet.</p>
+                </section>
+
+                <section class="education">
+                    <h4>Education</h4>
+                    <ul>
+                        <li><b>2011-2015</b><br>
+                            <p>Saint-Petersburg State University<br>
+                                Foreign Literatures, Foreign Language (German)<br>
+                                Bachelor's Degree</p>
+                        </li>
+                        <li><b>Online-courses:</b>
+                            <ol>
+                                <li>HTML, CSS and Javascript for Web Developers 2020 (Coursera)</li>
+                                <li>HTML and CSS Basics 2020 (Netology)</li>
+                                <li>Digital Start 2020 (Netology)</li>
+                                <li><i>(partly)</i> CS50's Itroduction to Computer Science (edX)</li>
+                            </ol>
+                        </li>
+                        <li><b>Books:</b>
+                            <ol>
+                                <li><i>Head First HTML with CSS & XHTML</i> - Elisabeth Robson, Eric Freeman</li>
+                                <li><i>Head First JavaScript Programming</i> - Elisabeth Robson, Eric Freeman</li>
+                                <li><i>Responsive Web Design with HTML5 and CSS3</i> - Ben Frain</li>
+                                <li><i>Grokking Algorithms</i> - Aditya Bhargava</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <div class="logo">
+                <a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg"
+                        alt="RS School Logo"></a>
+            </div>
+            <div class="text">
+                <p><img class="icon" src="images/github.png" alt="GitHub"><a class="small"
+                        href="https://github.com/Alekice" title="My GitHub">Visit my GitHub</a></p>
+                <p>2021</p>
+            </div>
+        </footer>
+    </div>
+
+
+</body>
+
+</html>
