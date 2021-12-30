@@ -131,12 +131,17 @@ body {
 
 .contacts__list {
     padding: 0;
+    padding-left: 16px;
     margin: 0;
     list-style-type: none;
 }
 
 .contacts__list-item {
     margin-bottom: 20px;
+}
+
+.contacts__list-item:last-child {
+    margin-bottom: 0;
 }
 
 .contacts__icon {
@@ -150,6 +155,31 @@ body {
 .contacts__item-link:visited {
     text-decoration: none;
     color: inherit;
+}
+
+.skills__list {
+    list-style-type: none;
+    padding: 0;
+    padding-left: 16px;
+    margin: 0;
+}
+
+.skills__list-item {
+    margin-bottom: 10px;
+}
+
+.skills__list-item:last-child {
+    margin-bottom: 0;
+}
+
+.skills__list-item::before {
+    content: '✓';
+    margin-right: 16px;
+}
+
+.section__text {
+    padding: 0 16px;
+    margin: 0;
 }
 
 .main {
