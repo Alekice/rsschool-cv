@@ -73,6 +73,10 @@ body {
     padding: 0 48px 48px;
 }
 
+.section-aside {
+    padding: 0 32px 48px;
+}
+
 .section__title {
     font-size: 32px;
     text-transform: uppercase;
@@ -98,6 +102,18 @@ body {
     margin-bottom: 24px;
     background: none;
     border-bottom: none;
+    position: relative;
+}
+
+.main-title::after {
+    content: '';
+    position: absolute;
+    left: calc(168px - 9%);
+    bottom: 0;
+    width: 18%;
+    height: 2px;
+    background-color: #66a5ad;
+    box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75)
 }
 
 .image-wrap {
@@ -194,17 +210,6 @@ body {
     padding-top: 48px;
 }
 
-.section__code-subtitle {
-    text-align: left;
-    font-weight: 700;
-}
-
-.code-list {
-    margin: 0;
-    padding: 0;
-    padding-left: 48px;
-}
-
 .pre {
     margin: 0;
     line-height: 1.5;
@@ -219,6 +224,7 @@ body {
 .projects__item {
     width: 50%;
     background-color: #07575b;
+    box-shadow: 0 0 20px 0px rgba(3, 34, 36, 0.25);
     transition: .2s ease-in-out;
 }
 
