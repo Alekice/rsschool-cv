@@ -178,12 +178,14 @@ body {
 }
 
 .section__text {
-    padding: 0 16px;
+    padding: 0 32px;
     margin: 0;
+    line-height: 2;
 }
 
 .main {
     width: 70%;
+    padding-top: 48px;
 }
 
 .footer {
