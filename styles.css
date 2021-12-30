@@ -205,6 +205,43 @@ body {
     padding-left: 48px;
 }
 
+.projects__wrap {
+    padding: 0 32px;
+    display: flex;
+}
+
+.projects__item {
+    width: 50%;
+    background-color: #07575b;
+}
+
+.projects__link,
+.projects__link:active,
+.projects__link:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.projects__link_disabled {
+    pointer-events: none;
+}
+
+.projects__item-odd {
+    margin-right: 16px;
+}
+
+.projects__item-even {
+    margin-left: 16px;
+}
+
+.projects__image {
+    width: 100%;
+}
+
+.projects__text {
+    text-align: center;
+}
+
 .footer {
     max-width: 1440px;
     min-height: 80px;

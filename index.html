@@ -214,20 +214,36 @@ function openOrSenior(data) {
         }
     }
     return result;
-}                
-                        </code>
+}
+</code>
                     </pre>
                     <li class="section__subtitle section__code-subtitle">Find Shortest Word</li>
                     <pre class="pre">
                         <code class="code">
 function findShort(s) {
     return Math.min.apply(null, s.split(" ").map(word => word.length));
-}                
-                        </code>
+}</code>
                     </pre>
                 </ol>
             </section>
-            <section class="section" id="projects"></section>
+            <section class="section" id="projects">
+                <h2 class="section__title">Projects</h2>
+                <div class="projects__wrap">
+                    <div class="projects__item projects__item-odd">
+                        <a href="https://alekice.github.io/taster/" target="_blank" class="projects__link">
+                            <img src="./assets/projects1.png" alt="Taster" class="projects__image">
+                            <p class="section__text projects__text">HTML, CSS</p>
+                        </a>
+                    </div>
+                    <div class="projects__item projects__item-even">
+                        <a href="" target="_blank" class="projects__link projects__link_disabled">
+                            <img src="" alt="" class="projects__image">
+                            <p class="section__text projects__text">New project's coming soon</p>
+                        </a>
+
+                    </div>
+                </div>
+            </section>
             <section class="section" id="education"></section>
             <section class="section" id="courses"></section>
         </main>
