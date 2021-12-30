@@ -188,6 +188,23 @@ body {
     padding-top: 48px;
 }
 
+.section__code-subtitle {
+    text-align: left;
+    font-weight: 700;
+}
+
+.code-list {
+    margin: 0;
+    padding: 0;
+    padding-left: 48px;
+}
+
+.pre {
+    margin: 0;
+    line-height: 1.5;
+    padding-left: 48px;
+}
+
 .footer {
     max-width: 1440px;
     min-height: 80px;
