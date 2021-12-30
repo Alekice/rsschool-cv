@@ -197,10 +197,7 @@
             </section>
             <section class="section" id="code">
                 <h2 class="section__title">Code</h2>
-                <ol class="code-list">
-                    <li class="section__subtitle section__code-subtitle">Categorize New Member</li>
-                    <pre class="pre">
-                        <code class="code">
+                <pre class="pre"><code class="code">
 function openOrSenior(data) {
     const result = [];
     let len = data.length;
@@ -215,16 +212,8 @@ function openOrSenior(data) {
     }
     return result;
 }
-</code>
-                    </pre>
-                    <li class="section__subtitle section__code-subtitle">Find Shortest Word</li>
-                    <pre class="pre">
-                        <code class="code">
-function findShort(s) {
-    return Math.min.apply(null, s.split(" ").map(word => word.length));
-}</code>
-                    </pre>
-                </ol>
+                    </code>
+                </pre>
             </section>
             <section class="section" id="projects">
                 <h2 class="section__title">Projects</h2>
@@ -252,7 +241,15 @@ function findShort(s) {
                     Bachelor's Degree
                 </p>
             </section>
-            <section class="section" id="courses"></section>
+            <section class="section" id="courses">
+                <h2 class="section__title">Courses</h2>
+                <ul class="courses__list">
+                    <li class="courses__list-item">HTML, CSS and Javascript for Web Developers (Coursera)</li>
+                    <li class="courses__list-item">HTML and CSS Basics (Netology)</li>
+                    <li class="courses__list-item">Digital Start (Netology)</li>
+                    <li class="courses__list-item"><i>(partly)</i> CS50's Itroduction to Computer Science (edX)</li>
+                </ul>
+            </section>
         </main>
     </div>
     <footer class="footer">

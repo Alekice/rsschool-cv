@@ -42,6 +42,12 @@ body {
 
 .nav-list__item {
     padding: 0 16px;
+    transition: .2s ease-in-out;
+}
+
+.nav-list__item:hover {
+    color: #66a5ad;
+    text-shadow: 0 0 3px #66a5ad;
 }
 
 .nav-list__item-link,
@@ -213,6 +219,7 @@ body {
 .projects__item {
     width: 50%;
     background-color: #07575b;
+    transition: .2s ease-in-out;
 }
 
 .projects__link,
@@ -230,6 +237,14 @@ body {
     margin-right: 16px;
 }
 
+.projects__item-odd:hover {
+    transform: scale(1.05) rotate(-5deg);
+}
+
+.projects__item-even:hover {
+    transform: scale(1.05) rotate(5deg);
+}
+
 .projects__item-even {
     margin-left: 16px;
 }
@@ -242,10 +257,30 @@ body {
     text-align: center;
 }
 
+.courses__list {
+    list-style-type: none;
+    padding: 0 32px;
+    margin: 0;
+}
+
+.courses__list-item {
+    margin-bottom: 10px;
+}
+
+.courses__list-item:last-child {
+    margin-bottom: 0;
+}
+
+.courses__list-item::before {
+    content: '✓';
+    margin-right: 16px;
+}
+
 .footer {
     max-width: 1440px;
     min-height: 80px;
     margin: 0 auto;
+    padding: 16px 0;
     background-color: #07575b;
     display: flex;
     align-items: center;
@@ -278,4 +313,14 @@ body {
 
 .footer__text {
     margin: 0;
+    transition: .2s ease-in-out;
+}
+
+.footer__text:hover .footer__link {
+    color: #66a5ad;
+    text-shadow: 0 0 3px #66a5ad;
+}
+
+.footer__text:hover .footer__icon {
+    fill: #66a5ad;
 }
