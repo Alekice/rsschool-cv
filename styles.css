@@ -12,7 +12,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Karma', serif;
-    font-size: 16px;
+    font-size: 20px;
     color: #fff;
 }
 
@@ -63,8 +63,19 @@ body {
     background-color: #003b46;
 }
 
+.section {
+    padding: 0 48px 48px;
+}
+
 .section__title {
-    font-size: 24px;
+    font-size: 32px;
+    text-transform: uppercase;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    padding: 12px 0 4px;
+    margin: 0;
+    margin-bottom: 48px;
 }
 
 .section__subtitle {
@@ -77,10 +88,10 @@ body {
 .main-title {
     font-size: 48px;
     font-weight: 400;
-    text-transform: uppercase;
-    text-align: center;
     margin-top: 48px;
     margin-bottom: 24px;
+    background: none;
+    border-bottom: none;
 }
 
 .image-wrap {
@@ -116,6 +127,29 @@ body {
     right: 0;
     clip-path: polygon(0 0, 0 100%, 100% 100%);
     box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+}
+
+.contacts__list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.contacts__list-item {
+    margin-bottom: 20px;
+}
+
+.contacts__icon {
+    fill: #fff;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.contacts__item-link,
+.contacts__item-link:active,
+.contacts__item-link:visited {
+    text-decoration: none;
+    color: inherit;
 }
 
 .main {
