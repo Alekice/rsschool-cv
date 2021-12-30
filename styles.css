@@ -34,8 +34,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 70%;
     height: 100%;
     font-size: 24px;
+    margin-left: auto;
 }
 
 .nav-list__item {
@@ -58,6 +60,62 @@ body {
 
 .aside {
     width: 30%;
+    background-color: #003b46;
+}
+
+.section__title {
+    font-size: 24px;
+}
+
+.section__subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.main-title {
+    font-size: 48px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 48px;
+    margin-bottom: 24px;
+}
+
+.image-wrap {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.image-wrap__image {
+    box-shadow: 12px 29px 81px 0px rgba(3, 34, 36, 0.75);
+}
+
+.image-wrap::after {
+    content: "";
+    width: 300px;
+    height: 2px;
+    background: #66a5ad;
+    position: absolute;
+    bottom: 0;
+    right: -25px;
+    clip-path: polygon(0 0, 100% 100%, 100% 0);
+    box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+}
+
+.image-wrap::before {
+    content: "";
+    width: 2px;
+    height: 300px;
+    background: #66a5ad;
+    position: absolute;
+    bottom: -25px;
+    right: 0;
+    clip-path: polygon(0 0, 0 100%, 100% 100%);
+    box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
 }
 
 .main {
