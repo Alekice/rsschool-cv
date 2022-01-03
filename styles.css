@@ -57,6 +57,36 @@ body {
     color: inherit;
 }
 
+.toggle-btn {
+    display: none;
+    width: 40px;
+    height: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 25px;
+}
+
+.toggle-btn__line {
+    width: 80%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.toggle-btn.collapsed .toggle-btn__line:nth-of-type(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle-btn.collapsed .toggle-btn__line:nth-of-type(2) {
+    opacity: 0;
+}
+
+.toggle-btn.collapsed .toggle-btn__line:nth-of-type(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
 .container {
     max-width: 1440px;
     margin: 0 auto;
@@ -65,7 +95,7 @@ body {
 }
 
 .aside {
-    width: 30%;
+    width: 432px;
     background-color: #003b46;
 }
 
@@ -125,6 +155,7 @@ body {
 
 .image-wrap__image {
     box-shadow: 12px 29px 81px 0px rgba(3, 34, 36, 0.75);
+    width: 100%;
 }
 
 .image-wrap::after {
@@ -206,7 +237,7 @@ body {
 }
 
 .main {
-    width: 70%;
+    max-width: 1008px;
     padding-top: 48px;
 }
 
@@ -329,4 +360,84 @@ body {
 
 .footer__text:hover .footer__icon {
     fill: #66a5ad;
+}
+
+@media (max-width: 1280px) {
+    .header,
+    .container,
+    .footer {
+        width: 1024px;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    .nav-list {
+        font-size: 20px;
+        margin: 0 auto;
+    }
+
+    .section__title {
+        font-size: 26px;
+    }
+
+    .main-title {
+        font-size: 38px;
+    }
+
+    .main-title::after {
+        left: calc(120px - 9%);
+    }
+
+    .section__subtitle {
+        font-size: 20px;
+    }
+
+    .aside {
+        width: 336px;
+    }
+
+    .main {
+        max-width: 688px;
+    }
+
+    .image-wrap {
+        width: 240px;
+        height: 240px;
+    }
+
+    .image-wrap::after {
+        width: 240px;
+    }
+
+    .image-wrap::before {
+        height: 240px;
+    }
+
+    .contacts__icon {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 992px) {
+    .header,
+    .container,
+    .footer {
+        width: 100%;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .toggle-btn {
+        display: flex;
+    }
 }
