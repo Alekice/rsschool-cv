@@ -191,6 +191,12 @@ body {
 
 .contacts__list-item {
     margin-bottom: 20px;
+    transition: .3s;
+    transform-origin: 0;
+}
+
+.contacts__list-item:hover {
+    transform: scale(1.1);
 }
 
 .contacts__list-item:last-child {
@@ -234,6 +240,7 @@ body {
     padding: 0 32px;
     margin: 0;
     line-height: 2;
+    text-align: justify;
 }
 
 .main {
@@ -254,10 +261,13 @@ body {
 .projects__wrap {
     padding: 0 32px;
     display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -16px;
 }
 
 .projects__item {
-    width: 50%;
+    width: calc(50% - 16px);
+    margin-bottom: 16px;
     background-color: #07575b;
     box-shadow: 0 0 20px 0px rgba(3, 34, 36, 0.25);
     transition: .2s ease-in-out;
@@ -277,13 +287,12 @@ body {
 .projects__item-odd {
     margin-right: 16px;
 }
-
 .projects__item-odd:hover {
-    transform: scale(1.05) rotate(-5deg);
+    transform: scale(1.05) rotate(-1deg);
 }
 
 .projects__item-even:hover {
-    transform: scale(1.05) rotate(5deg);
+    transform: scale(1.05) rotate(1deg);
 }
 
 .projects__item-even {
@@ -306,6 +315,18 @@ body {
 
 .courses__list-item {
     margin-bottom: 10px;
+    cursor: pointer;
+    transition: .3s;
+    transform-origin: 0;
+}
+
+.courses__list-item:hover {
+    transform: scale(1.1);
+}
+
+.courses__list-item a {
+    color: inherit;
+    text-decoration: none;
 }
 
 .courses__list-item:last-child {
